@@ -1,0 +1,31 @@
+FoamFile {
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+
+divSchemes {
+    default     Gauss linear;
+}
+
+gradSchemes {
+    default     Gauss linear;
+}
+
+snGradSchemes {
+    default     none;
+}
+
+laplacianSchemes {
+    default     Gauss linear uncorrected;
+}
+
+ddtSchemes {
+    default     Euler;
+}
+
+fluxRequired {
+    default     no;
+}
